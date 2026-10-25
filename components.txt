@@ -1,0 +1,26 @@
+# Hardware Components
+
+This is the list of components I used to build my Micromouse maze-solving robot.
+
+| S. No. | Component                          |    Quantity | Purpose                                       |
+| -----: | ---------------------------------- | ----------: | --------------------------------------------- |
+|      1 | Arduino UNO R4 Minima              |           1 | Main controller                               |
+|      2 | VL53L0X Time-of-Flight sensors     |           3 | Measure distances and detect maze walls       |
+|      3 | TB6612FNG motor driver             |           1 | Control the two DC motors                     |
+|      4 | N20 geared DC motors with encoders |           2 | Drive the robot and provide wheel feedback    |
+|      5 | 3S Li-ion battery pack             |           1 | Main power source                             |
+|      6 | LM2596 buck converter              |           1 | Voltage regulation                            |
+|      7 | AM1117 buck converter              |           1 | Dedicated sensor power supply                 |
+|      8 | Power switches                     |           2 | Switch the power paths                        |
+|      9 | Zero-PCB (general-purpose PCB)     |           1 | Mount and connect the electronic components   |
+|     10 | Wheels(1 caster and 2 rubber wheel)|           3 | Robot movement                                |
+|     11 | Jumper wires                       | As required | Electrical connections                        |
+|     12 | Robot chassis                      |           1 | Supports the motors, sensors, and electronics |
+
+
+## Notes
+
+* The three VL53L0X sensors are positioned to detect obstacles in front and on either side of the robot.
+* The TB6612FNG controls the motors using direction and PWM signals.
+* The motor encoders provide wheel movement feedback.
+* The zero-PCB is used for mounting and connecting the electronics.
